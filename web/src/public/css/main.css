@@ -131,9 +131,9 @@ License    		: http://pixelhint.com/license
 
 }
 
-
-
-
+#mean_nav > ul > li {
+  min-width: 150px;
+}
 
 
 /*    Reset Default Foundation Styling    */

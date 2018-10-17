@@ -1,4 +1,4 @@
-@extends('pages.includes.template') 
+@extends('pages.includes.template')
 @section('content')
 
 <!--  Start Services Section  -->
@@ -7,7 +7,8 @@
     <!--    Start Services Titles    -->
     <div class="row">
         <h1 class="mean_title">CONTACATANOS AHORA</h1>
-        <h2 class="sub_title">Escribenos cualquier inquietud que tengas o el carro que buscas para tu viaje y muy pronto te estaremos contactando
+        <h2 class="sub_title">Escribenos cualquier inquietud que tengas o el carro que buscas para tu viaje y muy
+            pronto te estaremos contactando
             para colaborarte en tu reserva</h2>
     </div>
     <!--    End Services Titles    -->
@@ -18,7 +19,7 @@
 
             <!-- Contacus form -->
             <div class="row form-container">
-    @include('contactform')
+            @include('pages.includes.contactform')
             </div>
             <!-- ./Contacus form -->
 
@@ -54,7 +55,8 @@
             <!-- Contact Phones -->
             <div class="phones_holder">
                 <h2 class="sub_title">Lunes a Domingo 7 am - 7 pm</h2>
-                <h2 class="sub_title"><b>{{ Config::get('staticdata.phone_1') }}</b>, <b>{{ Config::get('staticdata.phone_2') }}</b>, <b>{{ Config::get('staticdata.phone_3') }}</b></h2>
+                <h2 class="sub_title"><b>{{ Config::get('staticdata.phone_1') }}</b>, <b>{{
+                        Config::get('staticdata.phone_2') }}</b>, <b>{{ Config::get('staticdata.phone_3') }}</b></h2>
             </div>
             <!-- Contact Phones -->
         </div>
@@ -65,4 +67,11 @@
 
 </section>
 <!--  End Services Section  -->
+@endsection
+
+@section('additionaljs')
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvb6gNWu8TBnNHHeKwQ7Zfe7oQqEe-MDo&v=3.exp"></script>
+<script type="text/javascript" src="{{ asset('js/map.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/foundation/foundation.abide.js') }}"></script>
+{{-- <script type="text/javascript" src="../static/js/contactus.js"></script> --}}
 @endsection

@@ -22,21 +22,21 @@
     <div class="row services_list">
         <div class="small-12 medium-4 large-4 columns">
             <img src="{{ asset('img/car-sma.png') }}" alt="" title="" class="serv_icon" />
-            <h2 class="title"><a href="{{ url_for('smallcars') }}">Autos Pequeños</a></h2>
+            <h2 class="title"><a href="{{ route('smallcars') }}">Autos Pequeños</a></h2>
             <p>Te ofrecemos la mejor línea de autos económicos pequeños para mayor economía en combustible como el CHEVROLET
                 SPARK y el CHEVROLET SPARK GT.</p>
         </div>
 
         <div class="small-12 medium-4 large-4 columns">
             <img src="{{ asset('img/car-med.png') }}" alt="" title="" class="serv_icon" />
-            <h2 class="title"><a href="{{ url_for('mediumcars') }}">Autos Medianos</a></h2>
+            <h2 class="title"><a href="{{ route('midcars') }}">Autos Medianos</a></h2>
             <p>Te ofrecemos una línea de autos económicos medianos para su mayor comodidad y la de su familia. Autos como el
                 RENAULT LOGAN, CHEVROLET SAIL, VOLKSWAGEN JETTA y el KIA CERATO.</p>
         </div>
 
         <div class="small-12 medium-4 large-4 columns">
             <img src="{{ asset('img/car-suv.png') }}" alt="" title="" class="serv_icon" />
-            <h2 class="title"><a href="{{ url_for('suvcars') }}">Camionetas</a></h2>
+            <h2 class="title"><a href="{{ route('suvcars') }}">Camionetas</a></h2>
             <p>Te ofrecemos excelentes camionetas económicas para la aventura y el comfort como la CHEVROLET CAPTIVA y la TOYOTA
                 FORTUNER.</p>
         </div>

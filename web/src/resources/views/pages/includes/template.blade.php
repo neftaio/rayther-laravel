@@ -8,6 +8,8 @@
   <title>Rayther Alquiler de carros en Bogotá - Colombia</title>
 
   <!--    Stylesheet Files    -->
+  @yield('additionalcss')
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
   <link rel="stylesheet" href="{{ asset('css/normalize.css') }}" />
   <link rel="stylesheet" href="{{ asset('css/foundation.min.css') }}" />
   <link rel="stylesheet" href="{{ asset('css/main.css') }}" />
@@ -47,6 +49,8 @@
   <script type="text/javascript" src="{{ asset('js/foundation/foundation.topbar.js') }}"></script>
   <script type="text/javascript" src="{{ asset('js/scrollTo.js') }}"></script>
   <script type="text/javascript" src="{{ asset('js/main2.js') }}"></script>
+
+  @yield('additionaljs')
 
 </body>
 

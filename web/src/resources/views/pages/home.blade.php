@@ -1,5 +1,8 @@
 @extends('pages.includes.template_fancy') 
+@section('additionalcss')
+@endsection
 @section('content')
+<i class="fab fa-whatsapp"></i>
 <!--  Start Services Section  -->
 <section class="services" id="services">
 
@@ -40,7 +43,7 @@
 
     <!--    Start Button    -->
     <div class="btn_holder">
-        <a href="#" class="btn_fancy">
+        <a href="{{ route('contactus') }}" class="btn_fancy">
             <div class="solid_layer"></div>
             <div class="border_layer"></div>
             <div class="text_layer">Reservar ahora</div>

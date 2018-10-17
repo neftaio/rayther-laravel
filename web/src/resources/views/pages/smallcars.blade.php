@@ -36,7 +36,7 @@
     <!--    Contact Form    -->
     <div class="row contact-subsection">
         <h1 class="mean_title">Contáctanos</h1>
-    @include('contactform')
+    @include('pages.includes.contactform')
     </div>
     <!--    ./Contact Form    -->
 

@@ -27,7 +27,7 @@ function initialize() {
 	var marker = new google.maps.Marker({
 	  position:  new google.maps.LatLng(longitude, latitude),
 	  map: map,
-	  icon     : "../static/img/marker3.png"
+	  icon     : "../img/marker3.png"
 	});
 
 	var infowindow = new google.maps.InfoWindow({
