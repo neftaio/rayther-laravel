@@ -48,4 +48,43 @@ class MainsiteController extends Controller
         return view('pages.delivery');
     }
 
+    // Recive data from form and send email to notify
+    public function postSendnotify()
+    {
+        // $input = request()->all();
+        $data = [
+            'name' => request()->input('name'),
+            'email' => request()->input('email'),
+            'phone' => request()->input('phone'),
+            'cartype' => request()->input('cartype'),
+            'message' => request()->input('message'),
+        ];
+
+        // \Mail::send('emails.mail', $data, function($message) {
+        //     $message->to('sagenefta@gmail.com', 'Rayther')
+        //             ->subject('Notificacion desde la pagina web');
+        //     $message->from('rayther.rentacar@gmail.com','Rayther');
+        // });
+
+        \Mail::send('emails.mail', $data, function ($message) {
+            $message->to('teresa_avella@hotmail.com', 'Rayther')
+                ->subject('Notificacion desde la pagina web');
+            $message->from('rayther.rentacar@gmail.com', 'Rayther');
+        });
+
+        \Mail::send('emails.mail', $data, function ($message) {
+            $message->to('javierriatiga@yahoo.com', 'Rayther')
+                ->subject('Notificacion desde la pagina web');
+            $message->from('rayther.rentacar@gmail.com', 'Rayther');
+        });
+
+        \Mail::send('emails.mail', $data, function ($message) {
+            $message->to('info@rayther.com', 'Rayther')
+                ->subject('Notificacion desde la pagina web');
+            $message->from('rayther.rentacar@gmail.com', 'Rayther');
+        });
+
+        return response()->json(['html' => 1]);
+    }
+
 }

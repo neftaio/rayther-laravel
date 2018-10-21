@@ -50,3 +50,8 @@
 </section>
 <!--  End Services Section  -->
 @endsection
+
+@section('additionaljs')
+<script type="text/javascript" src="{{ asset('js/foundation/foundation.abide.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/contactus.js') }}"></script>
+@endsection

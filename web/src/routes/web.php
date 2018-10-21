@@ -36,3 +36,6 @@ Route::get('/sobre-nosotros', 'MainsiteController@getAboutus')
 /* Route for delivery */
 Route::get('/servicio-a-domicilio', 'MainsiteController@getDelivery')
 ->name('delivery');
+// Route for send notify
+Route::post('/enviarmensaje', 'MainsiteController@postSendnotify')
+->name('sendemail');

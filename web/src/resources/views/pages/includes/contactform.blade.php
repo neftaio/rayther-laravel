@@ -1,5 +1,10 @@
-<div class="" id="form-cu-container">
+<div class="progress large-6 custompbc" style="display:none;">
+        <span style="width: 0%;" class="meter custompb"></span>
+</div>
 
+
+<div class="" id="form-cu-container">
+    <meta name="csrf-token" content="{{ csrf_token() }}" />
     <form data-abide="ajax" id="cform">
         <div class="row">
             <div class="large-12 columns">

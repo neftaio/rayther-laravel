@@ -1,8 +1,8 @@
 @extends('pages.includes.template_fancy') 
 @section('additionalcss')
+<link rel="stylesheet" href="{{ asset('css/home.css') }}" />
 @endsection
 @section('content')
-<i class="fab fa-whatsapp"></i>
 <!--  Start Services Section  -->
 <section class="services" id="services">
 

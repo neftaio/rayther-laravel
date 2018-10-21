@@ -73,5 +73,5 @@
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvb6gNWu8TBnNHHeKwQ7Zfe7oQqEe-MDo&v=3.exp"></script>
 <script type="text/javascript" src="{{ asset('js/map.js') }}"></script>
 <script type="text/javascript" src="{{ asset('js/foundation/foundation.abide.js') }}"></script>
-{{-- <script type="text/javascript" src="../static/js/contactus.js"></script> --}}
+<script type="text/javascript" src="{{ asset('js/contactus.js') }}"></script>
 @endsection
